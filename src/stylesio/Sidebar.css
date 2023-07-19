@@ -1,0 +1,44 @@
+.cardwrapper{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardframe{
+    width:100px;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 100%;
+
+}
+.cardframe img{
+    max-width: 100%;
+    height: auto !important;
+    width: 120px;
+    max-height: 120px;
+    margin: auto;
+    display: block;
+    border-radius: 100%;
+}
+
+.listWrapper:hover .customicon,
+.listWrapper:hover .custext{
+    color:rgba(255,255,255, 1) !important;
+
+}
+
+.cusiconclass{
+    color:rgba(255,255,255, 0.8) !important;
+    transition: transform 0.5s linear, color 0.5s !important;
+
+}
+
+.cusiconclass:hover{
+    color:rgba(255,255,255, 1) !important;
+    transform: scale(1.2,1.2);
+}
+
+.MuiDrawer-paper{
+    background-color: #0c0c14 !important;
+}

@@ -1,0 +1,9 @@
+.makebut:hover .papero{
+    background-color: #2FBF71 !important;
+
+}
+
+.papero{
+    z-index: -2 !important;
+    background-color: aliceblue;
+}

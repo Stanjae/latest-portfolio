@@ -1,0 +1,73 @@
+
+
+
+@media screen and (min-width:0px){
+    #about-me, #home, #services, #xperience, #portfolio,  #contact-me{
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    
+}
+
+.newItem .MuiListItemText-primary{
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.newItem .MuiListItemText-secondary{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 13.5px;
+    line-height: 22px;
+    font-weight: 100 !important;
+}
+
+.newItem{
+    padding: 20px 20px;
+    background-color: #0b0b13;
+    color: #fff;
+
+}
+
+ .spanText{
+    background: #2fbf71 !important;
+    color: #fff;
+    font-size: 11px;
+    width: 100px;
+    padding: 1px 8px;
+    letter-spacing: 1px;
+    margin-left: -24px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.spanText::after{
+    content: "" !important;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-top: 5px solid #165934;
+    border-left: 5px solid transparent;
+}
+
+.MuiSlider-colorPrimary
+{
+color: #2fbf71 !important;
+}
+
+
+/* contact-us */
+
+.contatUs{
+    text-decoration: none;
+}
+.contatUs:hover{
+    color: #2FBF71 !important;
+}
+
+/* custom form */
+
+.custextfield .css-1i0qufo-MuiInputBase-root-MuiOutlinedInput-root{
+padding: 0;
+}
