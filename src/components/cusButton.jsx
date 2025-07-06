@@ -1,9 +1,8 @@
+/* eslint-disable react/prop-types */
 import { Button, Paper } from '@mui/material';
-import React from 'react'
 import styled from '@emotion/styled';
-import cusimage from '../assets/about-me.jpg'
+import RESUME from '../assets/StanleyAjaeroResume.pdf'
 import '../stylesio/Button.css'
-import { HashLink } from 'react-router-hash-link';
 
 
 const MakeButton = styled(Button)(({ theme }) => ({
@@ -34,30 +33,13 @@ const DownloadButton = styled(Button)(({ theme }) => ({
 }
 }));
 
-const LinkerButton = styled(HashLink)(({ theme }) => ({
-  fontSize:'14px',
-  lineHeight:'42px',
-  letterSpacing:'2px',
-  background: theme.palette.primary.main,
-  textDecoration:'none',
-  borderRadius:0,
-  padding:'10px 20px',
-  color:'rgba(255,255,255, 0.9)',
-  zIndex:11,
-  display:'block',
-  '&:hover':{
-    opacity:'0.9',
-    background: theme.palette.neutral.main,
-    color:theme.palette.primary.main,
-}
-}));
 
 export const DownButton = ({title}) => {
   return (
     <span className='makebut'>
     <Paper className='papero' style={{borderRadius:0, height:'50px', width:'142px',transform:'translate(2px, 57.5px)'}}  elevation={5}> 
     </Paper>
-        <DownloadButton variant='contained' href={cusimage} download>
+        <DownloadButton variant='contained' href={RESUME} download>
             {title}
         </DownloadButton>
     </span>

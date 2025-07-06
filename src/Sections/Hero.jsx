@@ -1,5 +1,4 @@
-import { Box,  Grid, Typography, Paper } from '@mui/material'
-import React from 'react'
+import { Box,  Grid, Typography } from '@mui/material'
 import bghero from '../assets/blackcircle.png'
 import bigProfile from '../assets/green.png'
 import { TypeAnime } from '../components/TypeAnime'
@@ -24,36 +23,72 @@ const variants = {
 const Hero = () => {
   return (
     <Box sx={wrapperStyles}>
-        <Grid columnSpacing={1} columns={12} container sx={{ pl:{lg:2, xs:3}}}>
-            <Grid sx={{py:{lg:'50px'}, pl:{lg:'50px', xs:'0px'}}} px={2} xs={12} md={6} item>
-                <Typography  py={1} textAlign={'left'} fontWeight={600} gutterBottom color={'neutral.main'} 
-                variant='h5'>
-                    Hello, I am
-                </Typography>
+      <Grid
+        columnSpacing={1}
+        columns={12}
+        container
+        sx={{ pl: { lg: 2, xs: 3 } }}
+      >
+        <Grid
+          sx={{ py: { lg: "50px" }, pl: { lg: "50px", xs: "0px" } }}
+          px={2}
+          xs={12}
+          md={6}
+          item
+        >
+          <Typography
+            py={1}
+            textAlign={"left"}
+            fontWeight={600}
+            gutterBottom
+            color={"neutral.main"}
+            variant="h5"
+          >
+            Hello, I am
+          </Typography>
 
-                <Typography  py={1} textAlign={'left'} fontWeight={700} gutterBottom 
-                        color={'neutral.main'} variant='h1'>
-                        Stanley Ajaero
-                </Typography>
+          <Typography
+            py={1}
+            textAlign={"left"}
+            fontWeight={700}
+            gutterBottom
+            color={"neutral.main"}
+            variant="h1"
+          >
+            Stanley Ajaero
+          </Typography>
 
-                <TypeAnime />
+          <TypeAnime />
 
-                <Typography sx={{ opacity:0.7}} py={1.6}  textAlign={'left'} fontWeight={200} gutterBottom 
-                        color={'neutral.main'} variant='subtitle1'>
-                         I design and develop services for customers of all sizes, specializing in creating 
-                         stylish, modern websites, web services and online stores.
-                </Typography>
+          <Typography
+            sx={{ opacity: 0.7 }}
+            py={1.6}
+            textAlign={"left"}
+            fontWeight={200}
+            gutterBottom
+            color={"neutral.main"}
+            variant="subtitle1"
+          >
+            I&apos;m a results-driven Full-Stack Developer passionate about building
+            scalable, user-centric digital experiences.
+          </Typography>
 
-               <DownButton title={'Dowload Cv'}/>
-            </Grid>
-            <Grid  xs={12} md={6} px={{xs:2}} py={{xs:4}} item>
-                <motion.img transition={{ ease: "easeOut", duration: 3 }} initial="hidden" variants={variants} whileInView="visible" viewport={{ once: true }} 
-                style={imageStyles} src={bigProfile}/>
-                    
-            </Grid>
+          <DownButton title={"Download Cv"} />
         </Grid>
+        <Grid xs={12} md={6} px={{ xs: 2 }} py={{ xs: 4 }} item>
+          <motion.img
+            transition={{ ease: "easeOut", duration: 3 }}
+            initial="hidden"
+            variants={variants}
+            whileInView="visible"
+            viewport={{ once: true }}
+            style={imageStyles}
+            src={bigProfile}
+          />
+        </Grid>
+      </Grid>
     </Box>
-  )
+  );
 }
 
 export default Hero

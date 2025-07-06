@@ -1,14 +1,14 @@
 import aptechImg from '../assets/aptech-computer-education-logo.png'
 import ptouche from '../assets/logo-long@1000x-120x35.png'
 import adminting from '../assets/adm-log-1.png'
-import { Home, AccountBox, Tune, CollectionsBookmark,  
+import {
     Facebook, Twitter, GitHub, WhatsApp} from '@mui/icons-material';
 import mario from '../assets/mario.png'
 import admintingpage from '../assets/Home-Adminting.png'
 import alpaca from '../assets/Alpaca-Fashion-Academy.png'
 import ptouchePage from '../assets/Ptouche-Wifi-–-do-more…-be-unlimited.png'
 import lastofUs from '../assets/The-last-of-us-Reboot.png'
-import { Star } from '@mui/icons-material'
+
 
 
 
@@ -25,11 +25,12 @@ export const socialMedia = [
   ]
 
 export const skillset = [
-    {title:'HTML5', score:97},
-    {title:'REACT.Js', score:90},
-    {title:'WORDPRESS', score:85},
-    {title:'MATERIAL UI', score:89},
-    {title:'FIREBASE', score:85},
+    {title:'HTML5/CSS', score:97},
+    { title: 'REACT.Js', score: 90 },
+    {title:'TYPESCRIPT', score:85},
+    {title:'WORDPRESS', score:95},
+    {title:'NODE.JS', score:89},
+    {title:'NEXT.JS', score:90},
     {title:'GIT', score:90},
 ]
 

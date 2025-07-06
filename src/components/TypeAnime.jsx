@@ -4,14 +4,9 @@ export const TypeAnime = () => {
   return (
     <TypeAnimation
       sequence={[
-        'I Am a React + Django Full-Stack Developer', // Types 'One'
-        1000, // Waits 1s
-        'I am a Passionate Mautic Email Automation Marketer', // Deletes 'One' and types 'Two'
-        1000, // Waits 2s
-        'I am a Creative Wordpress Developer', // Types 'Three' without deleting 'Two'
-        /* () => {
-          console.log('Sequence completed');
-        }, */
+        "HIRE ME NOW", // Types 'One'
+        1000, // Waits 1s // Deletes 'One' and types 'Two' // Waits 2s
+        'Lets build something Impactful together', // Types 'Three' without deleting 'Two'
       ]}
       wrapper="span"
       cursor={true}
