@@ -6,7 +6,7 @@ export const TypeAnime = () => {
       sequence={[
         "HIRE ME NOW", // Types 'One'
         1000, // Waits 1s // Deletes 'One' and types 'Two' // Waits 2s
-        'Lets build something Impactful together', // Types 'Three' without deleting 'Two'
+        "LET'S BUILD SOMETHING IMPACTFUL TOGETHER", // Types 'Three' without deleting 'Two'
       ]}
       wrapper="span"
       cursor={true}

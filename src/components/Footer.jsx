@@ -1,6 +1,5 @@
 import { Box, Typography, Stack } from '@mui/material'
 import {socialMedia } from '../db/db'
-import React from 'react'
 
 const Footer = () => {
   return (
