@@ -5,8 +5,10 @@ import { Facebook, Twitter, GitHub, WhatsApp } from "@mui/icons-material";
 import mario from "../assets/mario.png";
 import admintingpage from "../assets/Home-Adminting.png";
 import alpaca from "../assets/Alpaca-Fashion-Academy.png";
-import ptouchePage from "../assets/Ptouche-Wifi-–-do-more…-be-unlimited.png";
+import ptouchePage from "../assets/pinterest.png";
 import lastofUs from "../assets/The-last-of-us-Reboot.png";
+import Owarch from "../assets/opera.png";
+import Tiktok from "../assets/tiktok.png";
 
 /* export const ContactInfo = [
     {title:"Uyo, Akwaibom State", icon:<Star/>},
@@ -66,10 +68,10 @@ export const Projectso = [
   },
   {
     id: 4,
-    title: "Ptouche WIFI Website",
-    link: "https://ptouche.com/",
+    title: "X Pinterest Clone",
+    link: "https://x-pinterest.vercel.app/",
     image: ptouchePage,
-    tech: ["Elementor", "Woo-Commerce", "Mautic", "Wordpress"],
+    tech: ["Next.js", "Tailwind.css", "Chakra UI", "Sanity.io",],
   },
   {
     id: 5,
@@ -78,9 +80,26 @@ export const Projectso = [
     image: lastofUs,
     tech: ["Html5", "Bootstrap"],
   },
+  {
+    id: 6,
+    title: "Tiktok Clone",
+    link: "https://vybesync.vercel.app/",
+    image: Tiktok,
+    tech: ["Next.js", "Tailwind.css", "ShadCn", "Sanity.io", "Cloudinary"],
+  },
 ];
 
 export const Xperience = [
+  {
+    header: "FullStack Engineer",
+    workplace: "ICTDs Technologies",
+    longtext:
+      "I developed, tested, and deployed intuitive school portals that empowered students under the Catholic Archdiocese to securely access their academic session results. In addition to building the core functionality, I led the development and implementation of new features within the content delivery platform, enhancing its usability and impact. I also provided ongoing support and maintenance, swiftly troubleshooting and resolving complex issues to ensure uninterrupted access and a smooth user experience.",
+    type: "Full-time",
+    image: Owarch,
+        period: "April 2024 - Present",
+    duty: "Remote",
+  },
   {
     header: "Front-End Intern",
     workplace: "Aptech Nigeria",
@@ -88,7 +107,7 @@ export const Xperience = [
     image: aptechImg,
     longtext:
       "At Aptech Nigeria, I had the opportunity to work in the web development department, contributing to various projects and gaining valuable experience in the field.Here, I worked with a team of developers, designers, and project managers to deliver high-quality web solutions to clients across diverse industries",
-    duty: "Office Job",
+    duty: "Onsite Job",
     period: "June 2020 - May 2021",
   },
 
@@ -108,9 +127,10 @@ export const Xperience = [
     workplace: "Ptouche WIFI Services",
     type: "Full-time",
     image: ptouche,
-    longtext: "coming soon",
+    longtext:
+      "I consistently recommended and implemented performance enhancements for both new and existing web applications, ensuring smooth and efficient user experiences. By leveraging progressive enhancement techniques, I built cross-browser compatible websites that remained accessible and functional across diverse environments. I translated design mockups and wireframes into high-quality, maintainable code, bringing visual concepts to life with precision. My frontend development process often involved React libraries such as Material UI, Ant Design, Chakra UI, and ShadCN to deliver clean, responsive interfaces. Additionally, I integrated seamlessly with RESTful APIs to connect the frontend with robust back-end services.",
     duty: "Remote",
-    period: "June 2022 - till date",
+    period: "Jan 2022 - Aug 2022",
   },
 ];
 

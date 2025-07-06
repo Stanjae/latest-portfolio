@@ -1,11 +1,7 @@
-import { Box,  Grid, Typography, Paper, Stack, Divider, ListItemText,
-    List, ListItem, ImageList, ImageListItem } from '@mui/material'
-import React, { useState } from 'react'
-import { CustomButton, DownButton, LinkoButton } from '../components/cusButton'
-import styled from '@emotion/styled'
+import { Box,  Grid, Typography, Divider, } from '@mui/material'
+import { useState } from 'react'
 import '../stylesio/Home.css'
 import { Projectso} from '../db/db'
-import CusCard from '../components/CusCard'
 import ImgCard from '../components/ImgCard'
 import CusModal from '../components/CusModal'
 import {motion} from 'framer-motion'
@@ -14,8 +10,6 @@ import {motion} from 'framer-motion'
     const wrapperStyles = { py:{md:'80px', xs:'40px'},
      pl:{lg:'140px', xs:'15px'}, pr:{lg:'100px', xs:'15px'},}
 
-     const heights = [150, 230, 190, 170, 210, 150, 230, 180, 150, 190,
-         200, 150, 230, 150, 180];
 
     const variants = {
             visible: { opacity: 1, scale:1 },

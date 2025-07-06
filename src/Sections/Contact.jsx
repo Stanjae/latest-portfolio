@@ -57,7 +57,7 @@ const ContactMePages = () => {
               color={"neutral.main"}
               variant="h5"
             >
-              What’s your story? Get in touch
+              Let&apos;s bring your idea to life.
             </Typography>
             <Typography
               py={1}
@@ -65,8 +65,10 @@ const ContactMePages = () => {
               sx={{ opacity: "0.8" }}
               color={"neutral.main"}
             >
-              Always available for freelancing if the right project comes along,
-              Feel free to contact me.
+              I&apos;m open to freelance projects, contract roles, and full-time
+              opportunities whether you need a full-stack developer to build a
+              web app, scale an existing product, or join your team long-term.
+              Let’s connect. <br/>I&apos;d love to hear from you.
             </Typography>
 
             <List dense>
@@ -76,7 +78,7 @@ const ContactMePages = () => {
                 </ListItemIcon>
                 <ListItemText
                   sx={{ color: "neutral.main", fontSize: "25px" }}
-                  primary={"Uyo, Akwaibom State, Nigeria"}
+                  primary={"Remote"}
                 />
               </ListItem>
               <ListItem>
