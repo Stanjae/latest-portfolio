@@ -1,29 +1,34 @@
-import { Box, Slider, Typography } from '@mui/material'
-import React from 'react'
-import styled from '@emotion/styled'
-import '../stylesio/Home.css'
+import { Box, Slider, Typography } from "@mui/material";
+import styled from "@emotion/styled";
+import PropTypes from "prop-types";
+import "../stylesio/Home.css";
 
+const MakeSlider = styled(Slider)(() => ({
+  fontSize: "12px",
+  lineHeight: "18px",
+  letterSpacing: "3px",
+  color: "rgba(255,255,255, 0.8)",
+}));
 
-/* .Mui-disabled */
-
-const MakeSlider = styled(Slider)(({ theme }) => ({
-    fontSize:'12px',
-    lineHeight:'18px',
-    letterSpacing:'3px',
-    color:'rgba(255,255,255, 0.8)',
-    /* '& .Mui-disabled':{
-        color: theme.palette.primary.main,
-        background: theme.palette.primary,
-    } */
-}))
-
-const CusSlider = ({title, score}) => {
+const CusSlider = ({ title, score }) => {
   return (
     <Box>
-        <Typography fontSize={'14px'} variant='h6' color={'neutral.main'}>{title}</Typography>
-        <MakeSlider size='small' aria-label="Html" valueLabelDisplay="auto" defaultValue={score} disabled/>
+      <Typography fontSize={"14px"} variant="h6" color={"neutral.main"}>
+        {title}
+      </Typography>
+      <MakeSlider
+        size="small"
+        aria-label="Html"
+        valueLabelDisplay="auto"
+        defaultValue={score}
+        disabled
+      />
     </Box>
-  )
-}
+  );
+};
+CusSlider.propTypes = {
+  title: PropTypes.string.isRequired,
+  score: PropTypes.number.isRequired,
+};
 
-export default CusSlider
+export default CusSlider;

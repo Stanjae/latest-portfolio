@@ -48,19 +48,19 @@ const ServicesPage = () => {
       >
         <Grid xs={12} md={5} sx={{ py: { lg: "50px" } }} item>
           <List sx={{ width: { md: "300px" } }}>
-          {Academia.map((item, index) => (
-            <ListItem key={index} className="newItem" divider={true}>
-              <Stack spacing={1.5}>
-                <span className="spanText">{item.period}</span>
+            {Academia.map((item, index) => (
+              <ListItem key={index} className="newItem" divider={true}>
+                <Stack spacing={1.5}>
+                  <span className="spanText">{item.period}</span>
 
-                <ListItemText
-                  sx={{ pb: 1 }}
-                  primary={item.title}
-                  secondary={item.school}
-                />
-              </Stack>
-            </ListItem>
-          ))}
+                  <ListItemText
+                    sx={{ pb: 1 }}
+                    primary={item.title}
+                    secondary={item.school}
+                  />
+                </Stack>
+              </ListItem>
+            ))}
           </List>
         </Grid>
         <Grid

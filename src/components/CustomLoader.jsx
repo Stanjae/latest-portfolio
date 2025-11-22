@@ -1,4 +1,3 @@
-import React from 'react'
 import '../stylesio/cusLoader.css'
 import { motion, AnimatePresence } from "framer-motion"
 import svGdefault from '../assets/svg-loaders/three-dots.svg'

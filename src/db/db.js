@@ -4,53 +4,59 @@ import adminting from "../assets/adm-log-1.png";
 import { Facebook, Twitter, GitHub, WhatsApp } from "@mui/icons-material";
 import mario from "../assets/mario.png";
 import admintingpage from "../assets/Home-Adminting.png";
-import alpaca from "../assets/Alpaca-Fashion-Academy.png";
+import skillupImo from "../assets/skillup.png";
 import ptouchePage from "../assets/pinterest.png";
 import lastofUs from "../assets/The-last-of-us-Reboot.png";
 import Owarch from "../assets/opera.png";
 import Tiktok from "../assets/tiktok.png";
-
-/* export const ContactInfo = [
-    {title:"Uyo, Akwaibom State", icon:<Star/>},
-    {title:'Stanykhay29@gmail.com', }
-] */
+import MedReserve from "../assets/medreserve.png";
+import Blacko from "../assets/blacko.png";
 
 export const socialMedia = [
   {
-    icon: <Facebook className="cusiconclass" />,
+    icon: Facebook,
     link: "https://www.facebook.com/stanley.ajaero.5",
   },
   {
-    icon: <Twitter className="cusiconclass" />,
+    icon: Twitter,
     link: "https://twitter.com/weereyGeneral",
   },
   {
-    icon: <GitHub className="cusiconclass" />,
+    icon: GitHub,
     link: "https://github.com/Stanjae",
   },
   {
-    icon: <WhatsApp className="cusiconclass" />,
+    icon: WhatsApp,
     link: "tel:+234-701-532-4683",
   },
 ];
 
 export const skillset = [
   { title: "HTML5/CSS", score: 97 },
-  { title: "REACT.Js", score: 90 },
-  { title: "TYPESCRIPT", score: 90 },
-  { title: "WORDPRESS", score: 95 },
-  { title: "NODE.JS", score: 90 },
-  { title: "NEXT.JS", score: 95 },
-  { title: "GIT", score: 95 },
+  { title: "React.Js/Next.Js", score: 90 },
+  { title: "TypeScript", score: 90 },
+  { title: "Wordpress", score: 95 },
+  { title: "Node.js", score: 90 },
+  { title: "Testing - Jest,", score: 95 },
+  { title: "Git", score: 95 },
+  { title: "State Management", score: 90 },
+  { title: "CI/CD workflows", score: 95 },
 ];
 
 export const Projectso = [
   {
     id: 1,
-    title: "Mario Animation",
-    link: "https://stanjae.github.io/mario-animation/",
-    image: mario,
-    tech: ["Html5", "Css", "Vanilla Javascript"],
+    title: "MedReserve - Hospital Appointment Booking System",
+    link: "https://medreserve-self.vercel.app/",
+    image: MedReserve,
+    tech: [
+      "Next.js",
+      "Mantine UI",
+      "Tailwind.css",
+      "TypeScript",
+      "Appwrite",
+      "Paystack",
+    ],
   },
   {
     id: 2,
@@ -61,24 +67,32 @@ export const Projectso = [
   },
   {
     id: 3,
-    title: "Alpaca Web Design",
-    link: "https://stanjae.github.io/Alpaca-fashion-Academy/",
-    image: alpaca,
-    tech: ["Html5", "Tailwind.css", "Vanilla javascript"],
+    title: "SKILL-UP IMO PROGRAMME",
+    link: "https://portal.mdeeg.im.gov.ng/",
+    image: skillupImo,
+    tech: [
+      "Wordpress",
+      "Elementor",
+      "Yoast SEO",
+      "WP Rocket",
+      "Cloudflare",
+      "Mailgun",
+      "School MGT LMS",
+    ],
   },
   {
     id: 4,
     title: "X Pinterest Clone",
     link: "https://x-pinterest.vercel.app/",
     image: ptouchePage,
-    tech: ["Next.js", "Tailwind.css", "Chakra UI", "Sanity.io",],
+    tech: ["Next.js", "Tailwind.css", "Chakra UI", "Sanity.io"],
   },
   {
     id: 5,
-    title: "Last of Us WebPage",
-    link: "https://stanjae.github.io/last-of-us/",
-    image: lastofUs,
-    tech: ["Html5", "Bootstrap"],
+    title: "Blacko Store  - E-commerce Website",
+    link: "https://blacko-store.vercel.app/",
+    image: Blacko,
+    tech: ["React.js", "Material UI", "TypeScript", "Monnify", "Sanity.io"],
   },
   {
     id: 6,
@@ -86,6 +100,20 @@ export const Projectso = [
     link: "https://vybesync.vercel.app/",
     image: Tiktok,
     tech: ["Next.js", "Tailwind.css", "ShadCn", "Sanity.io", "Cloudinary"],
+  },
+  {
+    id: 7,
+    title: "Mario Animation",
+    link: "https://stanjae.github.io/mario-animation/",
+    image: mario,
+    tech: ["Html5", "Css", "Vanilla Javascript"],
+  },
+  {
+    id: 8,
+    title: "Last of Us WebPage",
+    link: "https://stanjae.github.io/last-of-us/",
+    image: lastofUs,
+    tech: ["Html5", "Bootstrap"],
   },
 ];
 

@@ -45,7 +45,7 @@ const ContactMePages = () => {
         columnSpacing={4}
         columns={12}
         container
-        sx={{ pl: { lg: 2, xs: 3 }, py: 2 }}
+        sx={{ pl: { lg: 0, xs: 3 }, py: 2 }}
       >
         <Grid xs={12} md={4} item>
           <Box sx={{ bgcolor: "bgcolor.sidebg", py: 4, px: 3 }}>
@@ -68,7 +68,8 @@ const ContactMePages = () => {
               I&apos;m open to freelance projects, contract roles, and full-time
               opportunities whether you need a full-stack developer to build a
               web app, scale an existing product, or join your team long-term.
-              Let’s connect. <br/>I&apos;d love to hear from you.
+              Let’s connect. <br />
+              I&apos;d love to hear from you.
             </Typography>
 
             <List dense>
@@ -85,10 +86,10 @@ const ContactMePages = () => {
                 <ListItemIcon>
                   <Email sx={{ color: "primary.main" }} />
                 </ListItemIcon>
-                <a className="contatUs" href="mailto:stanitytech@hotmail.com">
+                <a className="contatUs" href="mailto:stanykhay29@gmail.com">
                   <ListItemText
                     sx={{ color: "neutral.main", fontSize: "1rem" }}
-                    primary={"Stanitytech@hotmail.com"}
+                    primary={"Stanykhay29@gmail.com"}
                   />
                 </a>
               </ListItem>

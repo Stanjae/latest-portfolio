@@ -1,14 +1,12 @@
-import { createBrowserRouter, HashRouter, RouterProvider } from 'react-router-dom';
-import Root from './templatei/Root';
+import { createBrowserRouter,  RouterProvider } from 'react-router-dom';
+import Root from './layout/Root';
 import ErrorPage from './components/ErrorPage';
 import Home from './Pages/Home';
-/* import ThemeProvider from '@mui/material';
-import createTheme from '@mui/material'; */
 import '@fontsource/rubik'
-import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
+import Projects from './Pages/Projects';
 
 
 const theme = createTheme({
@@ -72,7 +70,8 @@ const router = createBrowserRouter([
     element: <Root/>,
     errorElement: <ErrorPage/>,
     children:[
-      {index:true, element:<Home/>},
+      { index: true, element: <Home /> },
+      {path:'/projects', element:<Projects/>}
     ]
   },
 ]);

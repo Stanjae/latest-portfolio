@@ -1,21 +1,29 @@
-import { Box,  Grid, Typography, Stack, Divider } from '@mui/material'
-import rocketo from '../assets/rocket.png'
-//import { LinkoButton } from '../components/cusButton'
-import ScoreProject from '../components/ScoreProject'
-import {motion } from 'framer-motion'
+import { Box, Grid, Typography, Stack, Divider } from "@mui/material";
+import rocketo from "../assets/rocket.png";
+import ScoreProject from "../components/ScoreProject";
+import { motion } from "framer-motion";
 
+const wrapperStyles = {
+  py: { md: "10px" },
+  pl: { lg: "140px", xs: "15px" },
+  pr: { lg: "100px", xs: "15px" },
+  display: "flex",
+  justifyContent: "center",
+};
 
-const wrapperStyles = { py:{md:'10px'},
- pl:{lg:'140px', xs:'15px'}, pr:{lg:'100px', xs:'15px'}, display:'flex', justifyContent:'center'}
-
-const imageStyles = {maxWidth:'100%', width:'900px',
-display:'block', margin:'auto', height:'auto', maxHeight:'500px'}
+const imageStyles = {
+  maxWidth: "100%",
+  width: "900px",
+  display: "block",
+  margin: "auto",
+  height: "auto",
+  maxHeight: "500px",
+};
 
 const variants = {
-    visible: { opacity: 1, scale:1 },
-    hidden: { opacity: 0 , scale:0},
-  }
-
+  visible: { opacity: 1, scale: 1 },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 const About = () => {
   return (
@@ -86,18 +94,20 @@ const About = () => {
           >
             I&apos;m Stanley Ajaero, a passionate and detail-oriented Full-Stack
             Developer with a strong background in building modern, responsive,
-            scalable web and mobile applications.<br/>
-            With over 5 years of hands-on experience. I specialize in crafting end-to-end solutions
-            using React, Node.js, Next.js, MongoDB, and AWS. From sleek user
-            interfaces to powerful backend systems, I enjoy turning complex
-            problems into elegant digital experiences. I&apos;ve worked with clients
-            across multiple industries; helping startups launch MVPs, integrating
-            third-party APIs, setting up cloud infrastructure, and delivering
-            clean, maintainable code. Whether collaborating with teams or
-            working independently.<br/>I value clear communication, reliability, and
-            continuous learning. Beyond the code, I&apos;m constantly improving my
-            skills, exploring new technologies, and contributing to
-            open-source projects.
+            scalable web and mobile applications.
+            <br />
+            With over 5 years of hands-on experience. I specialize in crafting
+            end-to-end solutions using React, Node.js, Next.js, MongoDB, and
+            AWS. From sleek user interfaces to powerful backend systems, I enjoy
+            turning complex problems into elegant digital experiences. I&apos;ve
+            worked with clients across multiple industries; helping startups
+            launch MVPs, integrating third-party APIs, setting up cloud
+            infrastructure, and delivering clean, maintainable code. Whether
+            collaborating with teams or working independently.
+            <br />I value clear communication, reliability, and continuous
+            learning. Beyond the code, I&apos;m constantly improving my skills,
+            exploring new technologies, and contributing to open-source
+            projects.
           </Typography>
 
           <Stack direction={"row"} spacing={{ xs: 1, sm: 2, md: 4 }}>
@@ -113,6 +123,6 @@ const About = () => {
       </Grid>
     </Box>
   );
-}
+};
 
-export default About
+export default About;
