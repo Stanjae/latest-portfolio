@@ -74,9 +74,9 @@ const CusCard = ({ item }) => {
             {item.summary.map((point, index) => (
               <ListItem disablePadding key={index}>
                 <ListItemIcon>
-                    <CircleIcon sx={{ fontSize: 20 }} />
+                    <CircleIcon sx={{ fontSize: 12 }} />
                   </ListItemIcon>
-                <ListItemText primary={point} />
+                <ListItemText color="white" primary={point} />
               </ListItem>
             ))}
           </List>
