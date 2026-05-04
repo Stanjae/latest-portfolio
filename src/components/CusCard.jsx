@@ -6,9 +6,14 @@ import {
   Typography,
   Breadcrumbs,
   Link,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
 } from "@mui/material";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
+import CircleIcon from '@mui/icons-material/Circle';
 
 const imageStyles = {
   width: "100px",
@@ -65,21 +70,16 @@ const CusCard = ({ item }) => {
               label={item.type}
             />
           </Stack>
-          <Typography
-            gutterBottom
-            component={"div"}
-            color={"neutral.main"}
-            sx={{
-              fontSize: "14px",
-              wordWrap: "break-word",
-              py: 2,
-              lineHeight: "25px",
-              pr: { md: "150px", xs: 2 },
-            }}
-            variant="body1"
-          >
-            {item.longtext}
-          </Typography>
+          <List>
+            {item.summary.map((point, index) => (
+              <ListItem disablePadding key={index}>
+                <ListItemIcon>
+                    <CircleIcon sx={{ fontSize: 20 }} />
+                  </ListItemIcon>
+                <ListItemText primary={point} />
+              </ListItem>
+            ))}
+          </List>
         </Grid>
       </Grid>
     </Box>
@@ -94,6 +94,7 @@ CusCard.propTypes = {
     period: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     longtext: PropTypes.string.isRequired,
+    summary: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 
